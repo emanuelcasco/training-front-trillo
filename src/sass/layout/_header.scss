@@ -2,4 +2,9 @@
   height: 7rem;
   background-color: $color-smoke-white;
   border-bottom: solid 1px $color-grey-light;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
