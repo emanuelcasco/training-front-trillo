@@ -16,8 +16,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem equals 10px, 10/16 = 62.5%;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+  background-size: cover;
+  background-repeat: none;
 }
 
 body {
@@ -25,7 +28,4 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: $color-grey-darkest;
-  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-  background-size: cover;
-  background-repeat: none;
 }

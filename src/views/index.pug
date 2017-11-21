@@ -26,16 +26,44 @@ html(lang='en')
                 use(xlink:href="img/sprites.svg#icon-bookmark")
                 span.user-nav__notification
                   | 7
+            .user-nav__icon-box 
               svg.user-nav__icon
                 use(xlink:href="img/sprites.svg#icon-chat")
                 span.user-nav__notification
-                  | 7
+                  | 13
             .user-nav__user
               img.user-nav__user-photo(src="img/user.jpg" alt="User photo")
               span.user-nav__user-name
                 | Emanuel Casco
         .content
           nav.sidebar
-            | Navigation
+            ul.sidebar-nav
+              li.sidebar-nav__item
+                a.sidebar-nav__link(href="#")
+                  svg.sidebar-nav__icon
+                    use(xlink:href="img/sprites.svg#icon-home")
+                  span
+                    | Hotel
+              li.sidebar-nav__item
+                a.sidebar-nav__link(href="#")
+                  svg.sidebar-nav__icon
+                    use(xlink:href="img/sprites.svg#icon-aircraft")
+                  span
+                    | Flight
+              li.sidebar-nav__item
+                a.sidebar-nav__link(href="#")
+                  svg.sidebar-nav__icon
+                    use(xlink:href="img/sprites.svg#icon-key")
+                  span
+                    | Rent car
+              li.sidebar-nav__item
+                a.sidebar-nav__link(href="#")
+                  svg.sidebar-nav__icon
+                    use(xlink:href="img/sprites.svg#icon-map")
+                  span
+                    | Tours
+            .sidebar-legal
+              | &copy; 2017 by Emanuel Casco
+
           main.hotel-view
             | hotel
