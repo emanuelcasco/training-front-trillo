@@ -1,6 +1,55 @@
 .btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: $color-smoke-white;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(black, .25);
 
-  &-inline {
+    & > * {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+    }
+
+    &__visible {
+        padding: 1.5rem 7.5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        padding: 1.5rem 0;
+        left: 0;
+        top: -100%;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, $color-primary-light, $color-primary);
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+
+    &:active {
+        transform: translateY(5px);
+        box-shadow: 0 1rem 1.5rem rgba(black, .5);
+    }
+
+}
+
+.btn-inline {
     border: none;
     color: $color-primary;
     font-size: inherit;
@@ -27,6 +76,4 @@
     &:focus {
         outline: none;
     }
-  }
-
 }
