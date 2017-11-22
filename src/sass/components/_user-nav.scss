@@ -10,14 +10,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-
-    &:not(:last-child) {
-      border-right: 1px solid $color-grey-light;
-    }
+    transition: all .5s;
   }
 
   & > *:hover {
-    background-color: $color-grey-light;
+    background-color: $color-grey-lightest;
+    border-radius: 100px;
   }
 
   &__icon-box {
@@ -33,7 +31,7 @@
   &__notification {
     position: absolute;
     top: .75rem;
-    right: 1rem;
+    right: 1.5rem;
     font-size: .8rem;
     height: 1.75rem;
     width: 1.75rem;
@@ -56,6 +54,10 @@
   }
 
   &__user-name {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 2rem;
   }
 
 }

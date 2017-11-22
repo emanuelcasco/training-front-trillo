@@ -60,5 +60,11 @@
     color: $color-smoke-white;
     text-align: center;
     padding: 2.5rem;
+
+    &__link:visited, 
+    &__link:link {
+      text-decoration: none;
+      color: $color-primary;
+    }
   }
 }
