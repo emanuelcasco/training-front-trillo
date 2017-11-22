@@ -63,12 +63,12 @@ html(lang='en')
                   span
                     | Tours
             .sidebar-legal
-              | &copy; 2017 by
-              a.sidebar-legar__link(href="https://github.com/emanuelcasco")
+              | &copy; 2017 by 
+              a.sidebar-legal__link(href="https://github.com/emanuelcasco", target="_blank")
                 | Emanuel Casco
 
           main.hotel-view
-            .gallery
+            aside.gallery
               figure.gallery__item
                 img.gallery__photo(src="img/hotel-1.jpg", alt="Photo hotel 1")
               figure.gallery__item
@@ -88,5 +88,67 @@ html(lang='en')
                   button.btn-inline
                     | Cafayate, Salta
               .overview__rating
-                .overview__rating-average 8.6
-                .overview__rating-count 2.094 votes
+                .overview__rating-average
+                  | 8.6
+                .overview__rating-count
+                  | 2.094 votes
+            section.detail
+              .detail__description
+                .paragraph
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                .paragraph
+                  | Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                ul.list
+                  li.list__item
+                    | Close the beach
+                  li.list__item
+                    | Breakfast included
+                  li.list__item
+                    | Free airport shuttle
+                  li.list__item
+                    | Free wifi in all rooms
+                  li.list__item
+                    | Air conditioning and heating
+                  li.list__item
+                    | Pets allowed
+                  li.list__item
+                    | We speak all languages
+                  li.list__item
+                    | Perfect for families
+                .recommend
+                  p.recommend__count
+                    | Lucy and 3 others friends recommend us.
+                  .recommend__friends
+                    img.recommend__photo(src="img/user-3.jpg", alt="Friend photo 1")
+                    img.recommend__photo(src="img/user-4.jpg", alt="Friend photo 2")
+                    img.recommend__photo(src="img/user-5.jpg", alt="Friend photo 3")
+                    img.recommend__photo(src="img/user-6.jpg", alt="Friend photo 4")
+              .detail__reviews
+                figure.review
+                  blockquote.review__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe.
+                  figcaption.review__user
+                    img.review__photo(src="img/user-1.jpg", alt="User photo")
+                    .review__user-box
+                      p.review__user-name
+                        | Agustin Casco
+                      p.review__user-date
+                        | Feb 23rd, 2017
+                    .review__rating
+                      | 7.8
+                figure.review
+                  blockquote.review__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe.
+                  figcaption.review__user
+                    img.review__photo(src="img/user-2.jpg", alt="User photo")
+                    .review__user-box
+                      p.review__user-name
+                        | Guadalupe Escobar
+                      p.review__user-date
+                        | Feb 23rd, 2017
+                    .review__rating
+                      | 7.8
+                button.btn-inline
+                  | Show all
+                  span
+                  | &rarr;
