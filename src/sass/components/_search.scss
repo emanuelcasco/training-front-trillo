@@ -4,6 +4,11 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-small) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     font-family: inherit;
     font-size: 1.4rem;
@@ -13,7 +18,14 @@
     border-radius: 100px;
     width: 90%;
     transition: all .2s;
-    margin-right: -2.25rem;
+    margin-right: -3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      margin-top: 2rem;
+      margin-right: -2.5rem;
+      border-radius: 0;
+    }
 
     &:focus {
       outline: none;
@@ -41,6 +53,11 @@
 
     &:active {
       transform: translateY(2px);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2.5rem;
+      margin-right: .5rem;
     }
   }
 
