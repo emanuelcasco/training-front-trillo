@@ -5,12 +5,31 @@
   background-color: $color-grey-lightest;
   border-bottom: solid 1px $color-grey-light;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
   &__description {
     background-color: $color-smoke-white;
     box-shadow: 0 2rem 3rem rgba(black, .1);
     flex: 0 0 60%;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 2rem;
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+    }
   }
 
   &__reviews {
@@ -19,5 +38,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 5rem 5rem;
+    }
   }
 }

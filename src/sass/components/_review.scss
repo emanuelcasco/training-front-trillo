@@ -1,15 +1,25 @@
 .review {
   background-color: $color-smoke-white;
   box-shadow: 0 2rem 3rem rgba(black, .1);
-  padding: 4rem 2.5rem;
+  padding: 2.5rem;
   padding-bottom: 2.5rem;
   margin-bottom: 3.5rem;
   position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding-right: 5rem;
+  }
 
   &__text {
     font-size: 1.2rem;
     line-height: 15px;
     margin-bottom: 2rem;
+    margin-right: 4.5rem;
   }
 
   &__user {
@@ -46,11 +56,15 @@
   &::before {
     content: "\201C";
     position: absolute;
-    top: -10rem;
-    right: 0;
+    top: -5.5rem;
+    right: .5rem;
     font-size: 20rem;
     color: $color-grey-light;
     font-family: sans-serif;
+    @media only screen and (max-width: $bp-small) {
+      top: -6rem;
+      right: 3rem;
+    }
   }
   
 }

@@ -45,7 +45,7 @@
   }
 
   &__user {
-
+    padding: 0;
   }
 
   &__user-photo {
@@ -58,6 +58,11 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+    display:none;
+    margin-left: 0;
+    }
   }
 
 }
